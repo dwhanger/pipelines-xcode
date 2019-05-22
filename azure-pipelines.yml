@@ -3,8 +3,8 @@
 # Add steps that install certificates, test, sign, and distribute the app, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/xcode
 
-pool:
-  vmImage: 'macOS 10.13'
+pool: 'default' # name of the private pool to run this job in
+  #vmImage: 'macOS 10.13'
 
 steps:
 - task: Xcode@5
